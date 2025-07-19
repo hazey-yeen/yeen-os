@@ -3,7 +3,7 @@
 # image will be published to ghcr.io/<user>/<name>
 name: yeen-os
 # description will be included in the image's metadata
-description: This is my personal OS image.
+description: Welcome to yeen-os with mullvad-vpn.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/silverblue-main
@@ -23,7 +23,7 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
-        
+
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
