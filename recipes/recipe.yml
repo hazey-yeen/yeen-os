@@ -16,9 +16,13 @@ modules:
     repos:
       files:
         - https://repository.mullvad.net/rpm/stable/mullvad.repo
+        - https://repository.mullvad.net/rpm/stable/mullvad.repo
+      copr:
+        - matinlotfali/KDE-Rounded-Corners
     install:
       packages:
         - mullvad-vpn
+        - kwin-effect-roundcorners
   - type: files
     files:
       - source: system
